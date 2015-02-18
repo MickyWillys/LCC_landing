@@ -1,3 +1,22 @@
+@font-face {
+font-family: 'Trebuchet';
+src: url('/Trebuchet MS.ttf');
+src: local('☺'), url('/Trebuchet MS.ttf') format('Stroke-Bold');
+font-weight: normal;
+font-style: normal;
+} 
+hr.sep {
+    display: block;
+    width: 15%;
+    margin: 1em auto;
+    border: 1px solid #C5A47E;
+    -webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */
+    transition: width 1s;
+}
+div.sixth-part:hover hr.sep{
+  width: 55%;
+ }
+
 .grid {
     max-width: 1400px;
     padding-left: 4em;
@@ -25,21 +44,90 @@
     max-width: 100%;
     max-height: 100%;
 }
+#logo-la-cuisine{
+  position: absolute;
+  float: right;
+  bottom: 45%;
+  right:5%;
+  max-width: 50%;
+  background: rgba(98, 55, 125, 0.3);
+}
+#logo-la-cuisine h1{
+  max-width: 100%;
+  font-size: 8vw;
+  text-shadow: #045528 1px 1px 1px;
+  font: trebuchet ms;
+  line-height: 75%;
+  color: white;
+}
+#logo-la-cuisine h3{
+  max-width: 100%;
+  font-size: 3vw;
+  text-shadow: #045528 1px 1px 1px;
+  font-style: italic;
+  line-height: 75%;
+  color: white;
+}
 #proposition-value-back {
+    position:absolute;
+    top:0%;
+    left: 0%;
+    max-width: 50%;
+    min-height: 50%;
     padding: 12px 24px;
-    border: 1px solid #068740;
+    border: 1px solid #5C5C5C;
     border-radius: 8px;
-    background-color: rgba(170, 75, 255, 0.7);
+    background-color: rgba(92, 92, 92, 0.7);
+}
+#proposition-value-text{
+  padding-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  max-width: 100%;
+  word-wrap:break-word;
+}
+#proposition-value-text h1{
+  max-width: 100%;
+  font-size: 6vw;
+  text-shadow: #045528 1px 1px 1px;
+  font: trebuchet ms;
+  line-height: 75%;
+  color: white;
+}
+#proposition-value-object{
+  padding-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  max-width: 100%;
+  word-wrap:break-word;
+}
+#proposition-value-object h3{
+  max-width: 100%;
+  font-size: 4vw;
+  text-shadow: #045528 1px 1px 1px;
+  font: trebuchet ms;
+  line-height: 100%;
+  color: #CCCA14;
+}
+#proposition-value-explanation{
+  margin-top: 20%;
+  max-width: 100%;
+  font-size: 4vw;
+  font: trebuchet ms;
+  line-height: 100%;
 }
 
 #first-button{
-     position:relative;
-     top:50%;
+     position:absolute;
+     top:80%;
      left:25%;
+
 }
 .first-part {
    background-image: url(../images/landing2.jpg);    
-   background-position: center bottom; /*Positioning*/
+   background-position: right center; /*Positioning*/
    background-repeat: no-repeat; /*Prevent showing multiple background images*/
    background-size: cover;
    opacity:1;
@@ -67,6 +155,9 @@
     }
 
 .button {
+    position: absolute;
+    left: 0px;
+    right: 0px;
     display: inline-block;
     text-align: center;
     vertical-align: middle;
@@ -78,7 +169,7 @@
     background: -moz-linear-gradient(top, #09e66c, #04b252);
     background: linear-gradient(to bottom, #09e66c, #04b252);
     text-shadow: #045528 1px 1px 1px;
-    font: italic normal normal 28px trebuchet ms;
+    font: italic normal normal 1.6em trebuchet ms;
     color: #ffffff;
     text-decoration: none;
 }
